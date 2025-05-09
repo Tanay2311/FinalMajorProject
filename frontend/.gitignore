@@ -1,24 +1,52 @@
-# Logs
-logs
+# --- Python / FastAPI backend ---
+venv/
+_pycache_/
+*.py[cod]
+*.sqlite3
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+instance/
+.env
+.env.*
 
-node_modules
-dist
-dist-ssr
-*.local
+# SQLAlchemy / Alembic
+migrations/
+alembic.ini
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Local SQLite DBs or backups
+*.db
+*.db-journal
+
+# Pytest / Coverage
+.cache/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# --- Node.js / React frontend ---
+node_modules/
+dist/
+build/
+.env.local
+.env.development
+.env.production
+.vite/
+
+# Clerk Auth cache (if any)
+.clerk/
+
+# --- OS / Editor files ---
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# VSCode / JetBrains IDEs
+.vscode/
+.idea/
+
+# --- Git ---
+# prevent committing private keys or auth files
+*.pem
+*.key
