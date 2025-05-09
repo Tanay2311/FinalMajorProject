@@ -1,90 +1,45 @@
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
+/* Button Styling */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: none;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #000;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-
-/*  -----------------------Uncomment to see CURRENCY CONVERTER (SHUBHAM) CHANGES  ----------------------------- */
-
-/* * {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  font-family: 'Phantomsans', sans-serif;
+  justify-content: center;
+  line-height: 1em;
+  width: 220px;
+  max-width: 100%;
+  padding: 2px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-html, body {
+.button-64:active,
+.button-64:hover {
+  outline: none;
+}
+
+.button-64 span {
+  background-color: #fcfcfc;
+  padding: 12px 20px;
+  border-radius: 6px;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  transition: background 300ms, color 300ms;
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f9faff;
-} */
+.button-64:hover span {
+  background: transparent;
+  color: #ffffff;
+}
+
+/* Responsive font sizing and width */
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 18px;
+  }
+}

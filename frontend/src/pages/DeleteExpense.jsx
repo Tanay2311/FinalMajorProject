@@ -103,7 +103,7 @@ const DeleteExpense = () => {
                     onChange={handleSelectAll}
                   />
                 </th>
-                <th>ID</th>
+                {/* <th>ID</th> */}
                 <th>Date</th>
                 <th>Description</th>
                 <th>Amount (₹)</th>
@@ -120,7 +120,7 @@ const DeleteExpense = () => {
                       onChange={() => handleSelect(expense.id)}
                     />
                   </td>
-                  <td>{expense.id}</td>
+                  {/* <td>{expense.id}</td> */}
                   <td>{expense.date?.slice(0, 10)}</td>
                   <td>{expense.description}</td>
                   <td>{expense.amount}</td>
